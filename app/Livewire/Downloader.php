@@ -22,7 +22,7 @@ class Downloader extends Component
             'url' => ['required', 'url', new YTUrl]
         ]);
 
-        $path = exec('python3 ' . base_path('converter') . ' ' . $this->url . ' ./');
+        $path = exec('python3 ' . base_path('converter') . ' ' . $this->url . ' ./storage');
         return Storage::download('public/' . $path);
     }
 }
