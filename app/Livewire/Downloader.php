@@ -9,7 +9,7 @@ use Livewire\Component;
 
 class Downloader extends Component
 {
-    public $url = 'https://www.youtube.com/watch?v=TtPAFtcvRV8';
+    public $url;
 
     public $message;
 
