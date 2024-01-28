@@ -19,6 +19,6 @@ try:
             audio.write_audiofile(mp3_path)
             os.remove(mp4_path)
     file_path = mp3_path.replace(path,'')
-    print(file_path)
+    print('mp3/' + file_path)
 except:
     print('Error')
